@@ -1,17 +1,10 @@
 NAME = minishell
 CC 			=	gcc
-#CCFLAGS	=	-I/usr/local/opt/readline/include -L/usr/local/opt/readline/lib -g -lreadline
-CCFLAGS		=	-Wall -Wextra -Werror -g
+CCFLAGS		=	-Wall -Wextra -Werror
 CCFLAGS_G	=	-Wall -Wextra -Werror -g
 SANITIZER	=	-fsanitize=address
-# IREADLINE	=	LDFLAGS="-L/usr/local/opt/readline/lib"
-# LREADLINE	=	-L/opt/homebrew/opt/readline/lib
-# IREADLINE = -I/Users/jeekim/.brew/opt/readline/include
-# LREADLINE = -L/Users/jeekim/.brew/opt/readline/lib
-#LREADLINE = -L/Users/jujeon/.brew/opt/readline/lib
-#IREADLINE = -I/Users/jujeon/.brew/opt/readline/include
-LREADLINE	=	-L/opt/homebrew/opt/readline/lib
-IREADLINE	=	-I/opt/homebrew/opt/readline/include
+IREADLINE 	=	-I/Users/jeekim/.brew/opt/readline/include
+LREADLINE 	=	-L/Users/jeekim/.brew/opt/readline/lib
 
 RM			=	rm -f
 
