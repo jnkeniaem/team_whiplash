@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   whiplash_93.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeekim <jeekim@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jujeon <jujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 15:45:35 by jeekim            #+#    #+#             */
-/*   Updated: 2022/10/01 16:36:13 by jeekim           ###   ########.fr       */
+/*   Updated: 2022/10/11 13:12:28 by jujeon           ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ void	whiplash_img(void)
 	char	*str;
 
 	fd = open(
-			"/Users/jeekim/Desktop/team_whiplash/srcs/whiplash_img/whiplash_93",
+			"./srcs/whiplash_img/whiplash_93",
 			O_RDONLY);
 	i = 0;
-	printf("fd : %d\n", fd);
 	while (i < 50)
 	{
 		str = get_next_line(fd);

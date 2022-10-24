@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jeekim <jeekim@student.42.fr>              +#+  +:+       +#+         #
+#    By: jujeon <jujeon@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 16:10:31 by jeekim            #+#    #+#              #
-#    Updated: 2022/10/01 16:10:32 by jeekim           ###   ########.fr        #
+#    Updated: 2022/10/11 13:10:27 by jujeon           ###   ########seoul.kr   #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,8 @@ CC 			=	gcc
 CCFLAGS		=	-Wall -Wextra -Werror -g
 CCFLAGS_G	=	-Wall -Wextra -Werror -g
 SANITIZER	=	-fsanitize=address
-# IREADLINE	=	LDFLAGS="-L/usr/local/opt/readline/lib"
-# LREADLINE	=	-L/opt/homebrew/opt/readline/lib
-IREADLINE = -I/Users/jeekim/.brew/opt/readline/include
-LREADLINE = -L/Users/jeekim/.brew/opt/readline/lib
-#LREADLINE = -L/Users/jujeon/.brew/opt/readline/lib
-#IREADLINE = -I/Users/jujeon/.brew/opt/readline/include
+LREADLINE	=	-L/opt/homebrew/opt/readline/lib
+IREADLINE   =   -I/opt/homebrew/opt/readline/include
 
 RM			=	rm -f
 
